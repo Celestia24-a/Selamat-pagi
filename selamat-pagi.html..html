@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Pagi untuk Pacarku</title>
+    <style>
+        /* Reset default margin dan padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden; /* Agar animasi background tidak membuat scroll */
+        }
+
+        /* Styling untuk background bergerak */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://imgur.com/a/SS0GmMw'); /* Ganti dengan link gambar langit Pisces */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            animation: moveBackground 20s linear infinite; /* Animasi background bergerak */
+        }
+
+        /* Container untuk teks */
+        .container {
+            background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 10px 0 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Animasi fadeIn untuk teks */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animasi background bergerak */
+        @keyframes moveBackground {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Pagi, Sayangku! 🌟</h1>
+        <p>Semoga harimu menyenangkan seperti langit Pisces ini. 💖</p>
+    </div>
+
+    <!-- Audio untuk musik latar -->
+    <audio autoplay loop>
+        <source src="https://drive.google.com/file/d/18z-2Qu45idfuUdoHc675qUQumW1S-Ern/view?usp=drivesdk" type="audio/mpeg">
+        Browser kamu tidak mendukung tag audio.
+    </audio>
+</body>
+</html>
